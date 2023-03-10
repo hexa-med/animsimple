@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body ul li{
+    list-style-type: none;
+
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+.wrapper {
+    width: 96%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+header h1 {
+    float: left;
+    margin: 10px 0;
+}
+header nav {
+    float: right;
+}
+
+header:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+header nav li{
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 1em;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#banner img{
+    width: 100%;
+    min-width: 1050px;
+}
+#banner{
+    height: 400px;
+    overflow: hidden;
+}
+
+#GroupOne {
+    margin-top: 40px;
+}
+#GroupOne h1{
+    margin: 7px;
+}
+#GroupOne li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    padding: 1%;
+    font-size: 12px;
+    line-height: 1.6em;
+}
+
+#GroupOne ul li img{
+    width: 70px;
+    border-radius: 10px;
+}
+section #GroupOne ul{
+    padding: 0 auto;
+}
+
+#GroupOne:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#GroupOne ul li h1{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+#GroupTwo {
+    margin-top: 30px;
+    border-top: 1px solid rgb(189, 189, 189);
+}
+
+#GroupTwo h1{
+    margin-top: 20px;
+    width: 300px;
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#GroupTwo ul {
+    margin-top: 10px;
+}
+
+#GroupTwo ul li {
+    width: 31%;
+    float: left;
+}
+
+#GroupTwo ul li img{
+    width: 100%;
+    position: relative;
+}
+#GroupTwo ul li img:hover{
+    bottom: 5px;
+}
+
+#GroupTwo ul li:nth-child(2){
+    margin: 0 3.5%;
+}
+
+#GroupTwo ul li h2{
+    font-size: 16px;
+    text-transform: uppercase;
+    padding:4px 0 0 0;
+}
+
+#GroupTwo .grise{
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: gray;
+}
+
+#GroupTwo ul li p{
+    font-size: 13px;
+    line-height: 1.6em;
+}
+
+#GroupTwo::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#quote{
+    margin-top: 30px;
+    background-color: rgb(110, 86, 40);
+    text-align: center;
+    width: 100%;
+    padding: 30px 0 40px 0;
+}
+
+#quote img{
+    width: 40px;
+    border-radius: 5px;
+}
+
+#quote blockquote{
+    margin: 12px auto;
+    color: rgb(233, 233, 233);
+    font-size: 13px;
+    width: 65%;
+}
+
+footer {
+    background-color: rgb(59, 59, 59);
+    color: rgb(167, 167, 167);
+    padding: 30px 0;
+}
+footer h3{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+footer ul{
+    float: left;
+    width: 24%;
+    margin-left: 1%;
+}
+
+footer li{
+    width: 95%;
+    margin: 15px;
+    font-size: 12px;
+}
+
+footer::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#copyright{
+    clear: both;
+    margin-top: 30px;
+    border-top: 1px solid ;
+    float: left;
+    width: 100%;
+    padding: 10px 0 0px 40px;
+    font-size: xx-small;
+}
+
+
+@media screen and (max-width:740px) {
+    
+    #GroupOne{
+        width: 85%;
+        margin: 25px auto;
+    }
+    
+
+    #GroupOne ul li{
+        width: 50%;
+        margin: 10px auto;
+    }
+    #GroupOne ul li:nth-child(odd){
+        clear: both;
+    }
+    #GroupOne ul li p{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    #GroupTwo ul li{
+        float: none;
+        width: 60%;
+        margin: 30px auto !important;
+    }
+    #GroupTwo h1{
+        margin: 0 auto;
+    }
+    #quote blockquote{
+        width: 70%;
+
+    }
+
+@media screen and (max-width:530px){
+    
+    header h1{
+        float: none;
+        margin: auto 0;
+        padding-top: 8px;
+        text-align: center;
+
+    }
+
+    header nav {
+        float: none;  
+    }
+    header nav li{
+        width: 17.5%;
+        margin: 5px auto 10px;
+        padding: 0 auto;
+        
+
+    }
+    footer ul{
+        width: 46.7%;
+        margin-left: 1%;
+    }
+    footer ul:nth-child(odd){
+        clear: both;
+    }
+
+}
+@media screen and (max-width:440px){
+    
+    header nav li{
+        display: block;
+        text-align: center;
+        border-bottom: 1px solid rgb(202, 202, 202);
+        width: 150px;
+        margin-bottom: 0;
+    }
+    #GroupOne ul li{
+        width: 95%;
+    }
+    footer ul{
+        width: 95%;
+        text-align: center;
+    }
+}
